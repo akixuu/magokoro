@@ -1,0 +1,15 @@
+url: "http://magokoro.com" 
+baseurl: ""
+title: "Magokoro Wellness"
+description: ""
+
+plugins:
+  - jekyll-loading-lazy
+
+defaults:
+-
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "wrapper"

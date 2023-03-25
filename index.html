@@ -1,0 +1,130 @@
+---
+layout: wrapper
+title: "Home"
+---
+<!-- title -->
+<div class="container text-center pb-5 d-grid gap-2 border-bottom border-4">
+    <div>
+        <h1 class="display-2 fw-bold m-0 p-0">{{page.title}}</h1>
+    </div>
+    <div>
+        <svg class="" width="68" height="16" viewBox="0 0 68 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="8" cy="8" r="8" fill="black" />
+            <circle cx="33.6" cy="8" r="8" fill="black" />
+            <circle cx="59.2" cy="8" r="8" fill="black" />
+        </svg>
+    </div>
+    <div>
+        <h5 class="h5 pt-3">Shiatsu - Life Coaching</h5>
+    </div>
+</div>
+
+<!-- about -->
+<div id=about class="container border-bottom border-4 pb-5">
+    <div class="row">
+        <div class="col-12 col-lg-6 my-lg-auto p-lg-3 pb-2">
+            <h2 >About Us</h2>
+            <p>まごころウェルネスチームのコーチングは、クライエントさんのチャレンジの成功への道の同伴者なので、クライエントさんが積極的に、知識を深め、解釈を深め、方法を見つけるためのお手伝いをします。私の精神科医時代の知識と経験と、さらにカナダで国際結婚をして子供を育てた経験と知識を生かした、コーチングです
+            </p>
+        </div>
+        <div class="col-12 col-lg-6 my-lg-auto">
+            <div class=" ratio ratio-16x9">
+                <img class="object-fit-cover img-fluid" src="../../assets/images/sakura.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id=services class="container border-bottom border-4 pb-5">
+    <h2 class="pb-2">Services</h2>
+    <div class="row g-2">
+        <style>
+            #services-card-shiatsu {
+                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('./assets/images/sakura.jpg');
+
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                transition: all 200ms ease-in;            
+            }
+
+            #services-card-shiatsu:hover {
+                transform: scale(1.01);
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+                transition: all 200ms ease-in;
+
+            }
+
+            #services-card-life-coaching{
+                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('./assets/images/plant.jpg');
+                background-size: cover;
+
+                background-repeat: no-repeat;
+                transition: all 200ms ease-in;
+            }
+
+            
+            #services-card-life-coaching:hover{
+                transform: scale(1.01);
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+                transition: all 200ms ease-in;
+            }
+        </style>
+        
+        <div class="col-12 col-lg-6">
+            <a class="text-decoration-none" href="./shiatsu.html">
+                <div id="services-card-shiatsu" class="card border border-0 py-5 object-fit-cover">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">Shiatsu</h5>
+                        <p class="card-text col-6">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12 col-lg-6">
+            <a class="text-decoration-none" href="./life-coaching.html">
+                <div id="services-card-life-coaching" class="card border border-0 py-5 object-fit-cover">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">Life Coaching</h5>
+                        <p class="card-text col-6">Some quick example text to build on the card title and make up the bulk of
+                            the card's
+                            content.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12">
+            <div class="card bg-dark border border-0 object-fit-cover">
+                <div class="card-body text-white">
+                    <p class="card-text text-center pt-1">Additional Offering: Life Coaching + Shiatsu 2-in-one</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- contact -->
+<div id="contact" class="container border-bottom border-4 pb-5">
+    <div class="row">
+        <div class="col-lg-4">
+            <h2 >Appointments</h2>
+        </div>
+        <div class="col-lg-8">
+            <p class="pt-2">Please contact us to book an appointment! Services are limited to Richmond, BC.</p>
+            <div class="d-flex fs-5">
+                <a href="tel:6043128883">
+                    <i class="fa fa-phone pe-2" aria-hidden="true"></i>
+                </a>
+                <a href="mailto:magokorowellnessteam@gmail.com">
+                    <i class="fa fa-envelope pe-2" aria-hidden="true"></i>
+                </a>
+            </div>
+            <a class="btn btn-primary mt-2" href="mailto:mooncake0804@gmail.com?subject=Appointment">Contact Us</a>
+        </div>
+    </div>
+</div>
+
