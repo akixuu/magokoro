@@ -6,6 +6,10 @@ description: ""
 plugins:
   - jekyll-loading-lazy
 
+contact:
+  phone: 6043128883
+  email: magokorowellnessteam@gmail.com 
+
 defaults:
 -
     scope:

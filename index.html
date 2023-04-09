@@ -1,11 +1,21 @@
 ---
 layout: wrapper
 title: "Home"
+
+about_us: 
+    まごころウェルネスチームのコーチングは、クライエントさんのチャレンジの成功への道の同伴者なので、クライエントさんが積極的に、知識を深め、解釈を深め、方法を見つけるためのお手伝いをします。私の精神科医時代の知識と経験と、さらにカナダで国際結婚をして子供を育てた経験と知識を生かした、コーチングです
+
+appointments: 
+    Please contact us to book an appointment! Services are limited to Richmond, BC.
+
+descriptions:
+    shiatsu: 指圧は圧痛点を押圧して自然治癒力を高め、健康維持や慢性疾患の改善に効果が期待され、コロナ後遺症の嗅覚消失や目眩、五十肩の改善にも効果的です。
+    life_coaching: まごころウェルネスチームは、精神科医の経験と国際結婚で得た知識を活かし、クライエントの成功へ同伴し、知識と方法の深化を支援するコーチングを提供しています。
 ---
 <!-- title -->
 <div class="container text-center pb-5 d-grid gap-2 border-bottom border-4">
     <div>
-        <h1 class="display-2 fw-bold m-0 p-0">{{page.title}}</h1>
+        <h1 class="display-2 fw-bold m-0 p-0">Life Coaching</h1>
     </div>
     <div>
         <svg class="" width="68" height="16" viewBox="0 0 68 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,7 +25,7 @@ title: "Home"
         </svg>
     </div>
     <div>
-        <h5 class="h5 pt-3">Shiatsu - Life Coaching</h5>
+        <h5 class="h5 pt-3">指圧 - ライフコーチング</h5>
     </div>
 </div>
 
@@ -24,8 +34,7 @@ title: "Home"
     <div class="row">
         <div class="col-12 col-lg-6 my-lg-auto p-lg-3 pb-2">
             <h2 >About Us</h2>
-            <p>まごころウェルネスチームのコーチングは、クライエントさんのチャレンジの成功への道の同伴者なので、クライエントさんが積極的に、知識を深め、解釈を深め、方法を見つけるためのお手伝いをします。私の精神科医時代の知識と経験と、さらにカナダで国際結婚をして子供を育てた経験と知識を生かした、コーチングです
-            </p>
+            <p>{{page.about_us}}</p>
         </div>
         <div class="col-12 col-lg-6 my-lg-auto">
             <div class=" ratio ratio-16x9">
@@ -36,7 +45,7 @@ title: "Home"
 </div>
 
 <div id=services class="container border-bottom border-4 pb-5">
-    <h2 class="pb-2">Services</h2>
+    <h2 class="pb-2">サービス</h2>
     <div class="row g-2">
         <style>
             #services-card-shiatsu {
@@ -77,9 +86,8 @@ title: "Home"
             <a class="text-decoration-none" href="./shiatsu.html">
                 <div id="services-card-shiatsu" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
-                        <h5 class="card-title">Shiatsu</h5>
-                        <p class="card-text col-6">Some quick example text to build on the card title and make up the bulk of the card's
-                            content.</p>
+                        <h5 class="card-title">指圧</h5>
+                        <p class="card-text col-6">{{page.descriptions.shiatsu}}</p>
                     </div>
                 </div>
             </a>
@@ -88,10 +96,8 @@ title: "Home"
             <a class="text-decoration-none" href="./life-coaching.html">
                 <div id="services-card-life-coaching" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
-                        <h5 class="card-title">Life Coaching</h5>
-                        <p class="card-text col-6">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">ライフコーチング</h5>
+                        <p class="card-text col-6">{{page.descriptions.life_coaching}}</p>
                     </div>
                 </div>
             </a>
@@ -100,7 +106,7 @@ title: "Home"
         <div class="col-12">
             <div class="card bg-dark border border-0 object-fit-cover">
                 <div class="card-body text-white">
-                    <p class="card-text text-center pt-1">Additional Offering: Life Coaching + Shiatsu 2-in-one</p>
+                    <p class="card-text text-center pt-1">追加サービス: ライフコーチング + 指圧 2-in-1</p>
                 </div>
             </div>
         </div>
@@ -111,19 +117,19 @@ title: "Home"
 <div id="contact" class="container border-bottom border-4 pb-5">
     <div class="row">
         <div class="col-lg-4">
-            <h2 >Appointments</h2>
+            <h2 >予約</h2>
         </div>
         <div class="col-lg-8">
-            <p class="pt-2">Please contact us to book an appointment! Services are limited to Richmond, BC.</p>
+            <p class="pt-2">{{page.appointments}}</p>
             <div class="d-flex fs-5">
-                <a href="tel:6043128883">
+                <a href="tel:{{site.contact.phone}}">
                     <i class="fa fa-phone pe-2" aria-hidden="true"></i>
                 </a>
-                <a href="mailto:magokorowellnessteam@gmail.com">
+                <a href="mailto:{{site.contact.email}}">
                     <i class="fa fa-envelope pe-2" aria-hidden="true"></i>
                 </a>
             </div>
-            <a class="btn btn-primary mt-2" href="mailto:mooncake0804@gmail.com?subject=Appointment">Contact Us</a>
+            <a class="btn btn-primary mt-2" href="mailto:{{site.contact.email}}?subject=Appointment">Contact Us</a>
         </div>
     </div>
 </div>
