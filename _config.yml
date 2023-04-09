@@ -1,7 +1,7 @@
 url: "http://magokoro.com" 
 baseurl: ""
 title: "Magokoro Wellness"
-description: ""
+description: "Magokoro Wellness Team official website"
 
 plugins:
   - jekyll-loading-lazy
