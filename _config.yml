@@ -7,6 +7,9 @@ plugins:
   - jekyll-loading-lazy
   - jekyll-sass-converter
   
+
+theme: null
+
 contact:
   phone: 6043128883
   email: magokorowellnessteam@gmail.com 
