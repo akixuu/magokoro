@@ -5,7 +5,8 @@ description: "Magokoro Wellness Team official website"
 
 plugins:
   - jekyll-loading-lazy
-
+  - jekyll-sass-converter
+  
 contact:
   phone: 6043128883
   email: magokorowellnessteam@gmail.com 
