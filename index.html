@@ -1,7 +1,5 @@
 ---
-layout: wrapper
 title: "Home"
-
 ---
 <!-- title -->
 <div class="container text-center pb-5 d-grid gap-2 border-bottom border-4">
@@ -16,31 +14,31 @@ title: "Home"
         </svg>
     </div>
     <div>
-        <h5 class="h5 pt-3 fw-bold">指圧 - ライフコーチング</h5>
+        <h5 class="h5 pt-3 fw-bold">ライフコーチング ❈ 指圧 ❈ クリニックアカンパニー</h5>
     </div>
 </div>
 
 <!-- about -->
 <div id=about class="container border-bottom border-4 pb-5">
     <div class="row">
-        <div class="col-12 col-lg-6 my-lg-auto p-lg-3 pb-2">
-            <h2 >About Us</h2>
-            <p>{{data.text.about_us}}</p>
+        <div class="col-12 col-xl-6 my-xl-auto p-xl-3 pb-2">
+            <h2 >{{site.data.text.titles.about_us}}</h2>
+            <p>{{site.data.text.about_us}}</p>
         </div>
-        <div class="col-12 col-lg-6 my-lg-auto">
+        <div class="col-12 col-xl-6 my-xl-auto">
             <div class=" ratio ratio-16x9">
-                <img class="object-fit-cover img-fluid" src="./assets/images/leaf.jpg" alt="">
+                <img class="object-fit-cover img-fluid" src="/assets/img/lookaboveforest.jpg" alt="">
             </div>
         </div>
     </div>
 </div>
 
 <div id=services class="container border-bottom border-4 pb-5">
-    <h2 class="pb-2">サービス</h2>
+    <h2 class="pb-2">{{site.data.text.titles.services}}</h2>
     <div class="row g-2">
         <style>
             #services-card-shiatsu {
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('./assets/images/sakura.jpg');
+                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/shiatsu/cover.jpg');
 
                 background-size: cover;
                 background-position: center;
@@ -57,7 +55,7 @@ title: "Home"
             }
 
             #services-card-life-coaching{
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('./assets/images/plant.jpg');
+                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/life-coaching/cover.jpg');
                 background-size: cover;
 
                 background-repeat: no-repeat;
@@ -71,24 +69,51 @@ title: "Home"
 
                 transition: all 200ms ease-in;
             }
+
+            #services-card-clinic-accompany{
+                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/clinic-accompany/cover.jpg');
+                background-size: cover;
+
+                background-repeat: no-repeat;
+                transition: all 200ms ease-in;
+            }
+
+            
+            #services-card-clinic-accompany:hover{
+                transform: scale(1.01);
+                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+                transition: all 200ms ease-in;
+            }
         </style>
         
         <div class="col-12 col-lg-6">
-            <a class="text-decoration-none" href="./shiatsu.html">
+            <a class="text-decoration-none" href="services/shiatsu">
                 <div id="services-card-shiatsu" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
-                        <h5 class="card-title">指圧</h5>
-                        <p class="card-text">{{page.descriptions.shiatsu}}</p>
+                        <h5 class="card-title">{{site.data.text.shorts.shiatsu.title}}</h5>
+                        <p class="card-text">{{site.data.text.shorts.shiatsu.txt}}</p>
                     </div>
                 </div>
             </a>
         </div>
         <div class="col-12 col-lg-6">
-            <a class="text-decoration-none" href="./life-coaching.html">
+            <a class="text-decoration-none" href="services/life-coaching">
                 <div id="services-card-life-coaching" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
-                        <h5 class="card-title">ライフコーチング</h5>
-                        <p class="card-text">{{page.descriptions.life_coaching}}</p>
+                        <h5 class="card-title">{{site.data.text.shorts.life_coaching.title}}</h5>
+                        <p class="card-text">{{site.data.text.shorts.life_coaching.txt}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-12">
+            <a class="text-decoration-none" href="services/clinic-accompany">
+                <div id="services-card-clinic-accompany" class="card border border-0 py-5 object-fit-cover">
+                    <div class="card-body text-white">
+                        <h5 class="card-title">{{site.data.text.shorts.clinic_accompany.title}}</h5>
+                        <p class="card-text">{{site.data.text.shorts.clinic_accompany.txt}}</p>
                     </div>
                 </div>
             </a>
@@ -97,7 +122,7 @@ title: "Home"
         <div class="col-12">
             <div class="card bg-dark border border-0 object-fit-cover">
                 <div class="card-body text-white">
-                    <p class="card-text text-center pt-1">追加サービス: ライフコーチング + 指圧 2-in-1</p>
+                    <p class="card-text text-center pt-1">{{site.data.text.two-in-one_deal}}</p>
                 </div>
             </div>
         </div>
@@ -108,10 +133,10 @@ title: "Home"
 <div id="contact" class="container border-bottom border-4 pb-5">
     <div class="row">
         <div class="col-lg-4">
-            <h2 >Appointments</h2>
+            <h2>{{site.data.text.titles.booking}}</h2>
         </div>
         <div class="col-lg-8">
-            <p class="pt-2">{{data.text.appointments}}</p>
+            <p class="pt-2">{{site.data.text.appointments}}</p>
         </div>
     </div>
 </div>

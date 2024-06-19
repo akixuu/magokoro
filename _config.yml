@@ -20,4 +20,19 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "wrapper"
+      layout: "default"
+-
+    scope:
+      path: ""
+      type: "services"
+    values:
+      layout: "service"
+
+collections:
+  services:
+    output: true
+    permalink: /:collection/:name
+    order:
+      - clinic-accompany.md
+      - life-coaching.md
+      - shiatsu.md

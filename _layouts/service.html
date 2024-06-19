@@ -1,15 +1,12 @@
 ---
-layout: wrapper
-title: "サービス | 指圧"
-
-img_dir: shiatsu
-
+title: "サービス | {{page.title}}"
+layout: default
 ---
 <!-- title -->
-<div class="container text-center  d-grid gap-2 border-bottom border-4 pb-5">
+<div class="container text-center d-grid gap-2 border-bottom border-4 pb-5">
     
     <div>
-        <h1 class="display-2 fw-bold m-0 p-0">Shiatsu</h1>
+        <h1 class="display-2 fw-bold m-0 p-0">{{page.title}}</h1>
     </div>
     <div>
         <svg class="" width="68" height="16" viewBox="0 0 68 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,43 +17,43 @@ img_dir: shiatsu
     </div>
 </div>
 
-
 <!-- preface -->
 <div class="container row mx-auto border-bottom border-4 pb-5">
-    <div class="col-12 col-lg-6 my-lg-auto p-lg-3 pb-2">
-        <h2>指圧とは</h2>
-        <p>{{page.about}}</p>
+    <div class="col-12 col-xl-6 my-xl-auto p-xl-3 pb-2">
+        <h2>{{page.title}}とは</h2>
+        <p>{{page.full}}</p>
     </div>
-    <div class="col-12 col-lg-6 my-lg-auto">
+    <div class="col-12 col-xl-6 my-xl-auto">
         <div class=" ratio ratio-16x9">
-            <img class="object-fit-cover img-fluid" src="../../assets/images/shiatsu/shiatsu.jpg" alt="">
+            <img class="object-fit-cover img-fluid" src="/assets/img/{{page.img_dir}}/cover.jpg" alt="">
         </div>
     </div>
 </div>
 
-<!-- benefits -->
-<!-- <div class="container border-bottom border-4 pb-5">
-    <h2 class="pb-3 text-center" >What are the benefits?</h2>
+<!-- points -->
+{% if page.points %}
+<div class="container border-bottom border-4 pb-5">
+    <!-- <h2 class="pb-3 text-center" >What are the benefits?</h2> -->
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-2 g-3">
         {% for point in page.points %}
             <div class="col">
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-1 row-cols-lg-2 g-1 g-lg-3">
                     <div class="col">
                         <div class="ratio ratio-1x1 ">
-                            <img class="img-fluid object-fit-cover" src="./assets/images/shiatsu/{{point.image}}" alt="">
+                            <img class="img-fluid object-fit-cover" src="/assets/img/{{page.img_dir}}/{{point.img}}" alt="">
                         </div>
                     </div>
                     <div class="col align-self-center pt-lg-3">
-                        <p class="text-center text-sm-start">{{point.text}}</p>
+                        <p class="text-center text-sm-start">{{point.txt}}</p>
                     </div>
                 </div>
             </div>
         {% endfor %}
     </div>
-</div> -->
+</div>
+{% endif %}
 
 <!-- testimonials -->
-
 
 <!-- flow, disclaimer-->
 <div class="container d-grid border-bottom border-4 pb-5">
@@ -83,7 +80,9 @@ img_dir: shiatsu
         <div id="collapse" class="accordion-collapse collapse" aria-labelledby="heading" data-bs-parent="#accordion">
           <div class="accordion-body">
             <p>
-                {{page.disclaimers}}
+                {% for disclaimer in page.disclaimers %}
+                    {{disclaimer}} <br>
+                {% endfor %}
             </p>
           </div>
         </div>

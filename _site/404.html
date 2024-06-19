@@ -3,13 +3,13 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title></title>
+    <title>404</title>
   
     <!-- stylesheets w/bootstrap -->
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
     
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/51e1f7ac6b.js" crossorigin="anonymous"></script>
@@ -33,7 +33,7 @@
 
     <nav class="sticky-top navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand fs-6 fw-bold" href="./">Magokoro Wellness</a>
+        <a class="navbar-brand fs-6 fw-bold" href="/">Magokoro Wellness</a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,19 +41,23 @@
         <div class="collapse navbar-collapse" id="collapsibleNavId">
             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#about">About</a>
+                    <a class="nav-link" href="/#about">About</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">Services</a>
                     <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="shiatsu">Shiatsu</a>
-                        <a class="dropdown-item" href="life-coaching">Life Coaching</a>
-                        <a class="dropdown-item" href="clinic-accompany">Clinic Accompany</a>
+                        
+                        <a class="dropdown-item" href="/services/clinic-accompany">クリニックアカンパニー</a>
+                        
+                        <a class="dropdown-item" href="/services/life-coaching">ライフコーチング</a>
+                        
+                        <a class="dropdown-item" href="/services/shiatsu">指圧</a>
+                        
                     </div>
                 </li>
                 <li class="nav-item ms-md-2 mt-2 mt-md-0">
-                    <a class="nav-link btn btn-primary rounded fw-semibold" href="index.html#contact">Book Now</a>
+                    <a class="nav-link btn btn-primary rounded fw-semibold" href="/#contact">Book Now</a>
                 </li>
                 
             </ul>
@@ -64,11 +68,12 @@
     
     
     <div class="d-grid mt-5 gap-5 mb-0 pb-0">
-    <div class="text-center align-items-center " style="height: 100rem; width: 100%;">
+    <div class="text-center align-items-center " style="height: 100vh; width: 100%;">
     <h1 class="display-1">Error 404</h1>
+    <p class="lead">The page you're looking for cannot be found.</p>
 </div>
     </div>
-    
+  
     <footer class="flex-shrink-0 py-3 mx-auto text-muted">
     <div class="text-center">
         <small>Copyright &copy; 2024 Magokoro Wellness</small>
