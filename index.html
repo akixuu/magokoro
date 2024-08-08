@@ -19,14 +19,14 @@ title: "Home"
 </div>
 
 <!-- about -->
-<div id=about class="container border-bottom border-4 pb-5">
-    <div class="row">
-        <div class="col-12 col-xl-6 my-xl-auto p-xl-3 pb-2">
-            <h3>{{site.data.text.titles.about_us}}</h3>
-            <p>{{site.data.text.about_us}}</p>
+<div id="about" class="container border-bottom border-4 pb-5">
+    <div class="row row-cols-1 row-cols-xl-2 align-items-stretch">
+        <div class="col d-flex flex-column">
+            <h3 class="fw-bold">{{site.data.text.titles.about_us}}</h3>
+            <p class="flex-grow-1">{{site.data.text.about_us}}</p>
         </div>
-        <div class="col-12 col-xl-6 my-xl-auto">
-            <div class=" ratio ratio-16x9">
+        <div class="col d-flex">
+            <div class="ratio w-100">
                 <img class="object-fit-cover img-fluid" src="/assets/img/lookaboveforest.jpg" alt="">
             </div>
         </div>
@@ -34,7 +34,7 @@ title: "Home"
 </div>
 
 <div id=services class="container border-bottom border-4 pb-5">
-    <h3 class="pb-2">{{site.data.text.titles.services}}</h3>
+    <h3 class="pb-2 fw-bold">{{site.data.text.titles.services}}</h3>
     <div class="row g-2">
         <style>
             #services-card-shiatsu {
@@ -133,7 +133,7 @@ title: "Home"
 <div id="contact" class="container border-bottom border-4 pb-5">
     <div class="row">
         <div class="col-lg-4">
-            <h3>{{site.data.text.titles.booking}}</h3>
+            <h3 class="fw-bold">{{site.data.text.titles.booking}}</h3>
         </div>
         <div class="col-lg-8">
             <p class="pt-2">{{site.data.text.appointments}}</p>

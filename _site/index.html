@@ -14,23 +14,11 @@
     
     <!-- font awesome icons -->
     <script src="https://kit.fontawesome.com/51e1f7ac6b.js" crossorigin="anonymous"></script>
-
-    <!-- mouse follower -->
-    <link rel="stylesheet" href="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.css">
-
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-  </head>
+ </head>
   <body>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     
-    <!-- mouse follower -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="https://unpkg.com/mouse-follower@1/dist/mouse-follower.min.js"></script>
-    <script>
-      var cursor = new MouseFollower();
-    </script>
-
     <nav class="sticky-top navbar navbar-expand-md navbar-light bg-light">
       <div class="container">
         <a class="navbar-brand fs-6 fw-bold" href="/">Magokoro Wellness</a>
@@ -85,13 +73,13 @@
 
 <!-- about -->
 <div id="about" class="container border-bottom border-4 pb-5">
-    <div class="row">
-        <div class="col-12 col-xl-6 my-xl-auto p-xl-3 pb-2">
-            <h2>真心ウェルネスについて</h2>
-            <p>心身の健康を目指してカナダBC州を活動拠点としてサービスを提供させていただいています。 身体的アプローチとしては、指圧を介し、健康維持、基礎疾患や慢性疾患のコントロールまたは改善を目指し、西洋医学を補うことで、皆様のベストな健康状態を目指します。 ライフコーチングでは、それぞれの方が自己の主体性を持ち、それぞれのゴールに向かって楽しく歩んでいく事を決意し、自主的に歩いていくことのお手伝いをさせていただかいます。クリニック、病院アカンパニーのサービスでは、通訳や専門的な医療の知識を提供し、各々が主体的医療にかかわれるお手伝いをさせていただきます。</p>
+    <div class="row row-cols-1 row-cols-xl-2 align-items-stretch">
+        <div class="col d-flex flex-column">
+            <h3 class="fw-bold">まごころウェルネスについて</h3>
+            <p class="flex-grow-1">患者様の心身の健康を目指してカナダBC州を活動拠点としてサービスを提供させていただいています。 身体的アプローチとしては、指圧を介し、健康維持、基礎疾患や慢性疾患のコントロールまたは改善を目指し、西洋医学を補うことで、皆様のベストな健康状態を目指します。 ライフコーチングでは、それぞれの方が自己の主体性を持ち、それぞれのゴールを決意し、行動選択と実行するための工夫を模索するお手伝いをさせて頂きます。クリニック、病院アカンパニーのサービスでは、通訳や医療の知識を提供し、各々が主体的に医療にかかわれるお手伝いをさせて頂きます。</p>
         </div>
-        <div class="col-12 col-xl-6 my-xl-auto">
-            <div class=" ratio ratio-16x9">
+        <div class="col d-flex">
+            <div class="ratio h-100">
                 <img class="object-fit-cover img-fluid" src="/assets/img/lookaboveforest.jpg" alt="" loading="lazy">
             </div>
         </div>
@@ -99,7 +87,7 @@
 </div>
 
 <div id="services" class="container border-bottom border-4 pb-5">
-    <h2 class="pb-2">サービス</h2>
+    <h3 class="pb-2 fw-bold">サービス</h3>
     <div class="row g-2">
         <style>
             #services-card-shiatsu {
@@ -157,7 +145,7 @@
                 <div id="services-card-shiatsu" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
                         <h5 class="card-title">指圧</h5>
-                        <p class="card-text">指圧は圧痛点を押圧して自然治癒力を高め、健康維持や慢性疾患の改善に効果が期待され、コロナ後遺症の嗅覚消失や目眩、五十肩の改善にも効果的です。</p>
+                        <p class="card-text">指圧は圧痛点を押圧して自然治癒力を高め、健康維持や急性期、慢性疾患の改善を目指します。</p>
                     </div>
                 </div>
             </a>
@@ -167,7 +155,7 @@
                 <div id="services-card-life-coaching" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
                         <h5 class="card-title">ライフコーチング</h5>
-                        <p class="card-text">まごころウェルネスチームは、精神科医の経験と国際結婚で得た知識を活かし、クライエントの成功へ同伴し、知識と方法の深化を支援するコーチングを提供しています。</p>
+                        <p class="card-text">精神科医（日本精神保険指定医）としての知識と経験を基礎におきながら、クライエント様に同伴し、改善の為の選択枝を見つけ実行できるように支援する事を目的としています。</p>
                     </div>
                 </div>
             </a>
@@ -178,7 +166,7 @@
                 <div id="services-card-clinic-accompany" class="card border border-0 py-5 object-fit-cover">
                     <div class="card-body text-white">
                         <h5 class="card-title">クリニックアカンパニー</h5>
-                        <p class="card-text">まごころウェルネスチームは、精神科医の経験と国際結婚で得た知識を活かし、クライエントの成功へ同伴し、知識と方法の深化を支援するコーチングを提供しています。</p>
+                        <p class="card-text">患者様が、どのような検査や投薬などの医療サービスを受けてるのかを把握し、積極的に医療に関わっていけれるようにお手伝いできればと思っています。</p>
                     </div>
                 </div>
             </a>
@@ -198,7 +186,7 @@
 <div id="contact" class="container border-bottom border-4 pb-5">
     <div class="row">
         <div class="col-lg-4">
-            <h2>予約</h2>
+            <h3 class="fw-bold">予約</h3>
         </div>
         <div class="col-lg-8">
             <p class="pt-2">お問い合わせ、ご予約は、</p>
