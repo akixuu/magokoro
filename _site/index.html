@@ -93,62 +93,62 @@
 
 <div id="services" class="container border-bottom border-4 pb-5">
     <h3 class="pb-2 fw-bold">サービス</h3>
+    <style>
+        #services-card-shiatsu {
+            background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/shiatsu/cover.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all 200ms ease-in;
+        }
+
+        #services-card-shiatsu:hover {
+            transform: scale(1.01);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+            transition: all 200ms ease-in;
+
+        }
+
+        #services-card-life-coaching {
+            background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/life-coaching/cover.jpg');
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            transition: all 200ms ease-in;
+        }
+
+
+        #services-card-life-coaching:hover {
+            transform: scale(1.01);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+            transition: all 200ms ease-in;
+        }
+
+        #services-card-clinic-accompany {
+            background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/clinic-accompany/cover.jpg');
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            transition: all 200ms ease-in;
+        }
+
+
+        #services-card-clinic-accompany:hover {
+            transform: scale(1.01);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+            transition: all 200ms ease-in;
+        }
+    </style>
+
     <div class="row g-2">
-        <style>
-            #services-card-shiatsu {
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/shiatsu/cover.jpg');
-
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                transition: all 200ms ease-in;            
-            }
-
-            #services-card-shiatsu:hover {
-                transform: scale(1.01);
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-                transition: all 200ms ease-in;
-
-            }
-
-            #services-card-life-coaching{
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/life-coaching/cover.jpg');
-                background-size: cover;
-
-                background-repeat: no-repeat;
-                transition: all 200ms ease-in;
-            }
-
-            
-            #services-card-life-coaching:hover{
-                transform: scale(1.01);
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-                transition: all 200ms ease-in;
-            }
-
-            #services-card-clinic-accompany{
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/clinic-accompany/cover.jpg');
-                background-size: cover;
-
-                background-repeat: no-repeat;
-                transition: all 200ms ease-in;
-            }
-
-            
-            #services-card-clinic-accompany:hover{
-                transform: scale(1.01);
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-                transition: all 200ms ease-in;
-            }
-        </style>
-        
         <div class="col-12 col-lg-6">
             <a class="text-decoration-none" href="services/shiatsu">
-                <div id="services-card-shiatsu" class="card border border-0 py-5 object-fit-cover">
-                    <div class="card-body text-white">
+                <div id="services-card-shiatsu" class="card border-0 my-1 object-fit-cover h-100">
+                    <div class="card-body text-white d-flex flex-column justify-content-center h-100 py-5">
                         <h5 class="card-title">指圧</h5>
                         <p class="card-text">指圧は圧痛点を押圧して自然治癒力を高め、健康維持や急性期、慢性疾患の改善を目指します。</p>
                     </div>
@@ -157,8 +157,8 @@
         </div>
         <div class="col-12 col-lg-6">
             <a class="text-decoration-none" href="services/life-coaching">
-                <div id="services-card-life-coaching" class="card border border-0 py-5 object-fit-cover">
-                    <div class="card-body text-white">
+                <div id="services-card-life-coaching" class="card border-0 my-1 object-fit-cover h-100">
+                    <div class="card-body text-white d-flex flex-column justify-content-center h-100 py-5">
                         <h5 class="card-title">ライフコーチング</h5>
                         <p class="card-text">精神科医（日本精神保険指定医）としての知識と経験を基礎におきながら、クライエント様に同伴し、改善の為の選択枝を見つけ実行できるように支援する事を目的としています。</p>
                     </div>
@@ -168,8 +168,8 @@
 
         <div class="col-12">
             <a class="text-decoration-none" href="services/clinic-accompany">
-                <div id="services-card-clinic-accompany" class="card border border-0 py-5 object-fit-cover">
-                    <div class="card-body text-white">
+                <div id="services-card-clinic-accompany" class="card border-0 my-1 object-fit-cover ">
+                    <div class="card-body text-white d-flex flex-column justify-content-center h-100 py-5">
                         <h5 class="card-title">クリニックアカンパニー</h5>
                         <p class="card-text">患者様が、どのような検査や投薬などの医療サービスを受けてるのかを把握し、積極的に医療に関わっていけれるようにお手伝いできればと思っています。</p>
                     </div>
@@ -185,6 +185,7 @@
             </div>
         </div>
     </div>
+
 </div>
 
 <!-- contact -->
@@ -199,8 +200,6 @@
         </div>
     </div>
 </div>
-
-
     </div>
   
     <footer class="flex-shrink-0 py-3 mx-auto text-muted">

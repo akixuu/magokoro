@@ -40,62 +40,62 @@ title: "Home"
 
 <div id=services class="container border-bottom border-4 pb-5">
     <h3 class="pb-2 fw-bold">{{site.data.text.titles.services}}</h3>
+    <style>
+        #services-card-shiatsu {
+            background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/shiatsu/cover.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: all 200ms ease-in;
+        }
+
+        #services-card-shiatsu:hover {
+            transform: scale(1.01);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+            transition: all 200ms ease-in;
+
+        }
+
+        #services-card-life-coaching {
+            background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/life-coaching/cover.jpg');
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            transition: all 200ms ease-in;
+        }
+
+
+        #services-card-life-coaching:hover {
+            transform: scale(1.01);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+            transition: all 200ms ease-in;
+        }
+
+        #services-card-clinic-accompany {
+            background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/clinic-accompany/cover.jpg');
+            background-size: cover;
+
+            background-repeat: no-repeat;
+            transition: all 200ms ease-in;
+        }
+
+
+        #services-card-clinic-accompany:hover {
+            transform: scale(1.01);
+            box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+            transition: all 200ms ease-in;
+        }
+    </style>
+
     <div class="row g-2">
-        <style>
-            #services-card-shiatsu {
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/shiatsu/cover.jpg');
-
-                background-size: cover;
-                background-position: center;
-                background-repeat: no-repeat;
-                transition: all 200ms ease-in;            
-            }
-
-            #services-card-shiatsu:hover {
-                transform: scale(1.01);
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-                transition: all 200ms ease-in;
-
-            }
-
-            #services-card-life-coaching{
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/life-coaching/cover.jpg');
-                background-size: cover;
-
-                background-repeat: no-repeat;
-                transition: all 200ms ease-in;
-            }
-
-            
-            #services-card-life-coaching:hover{
-                transform: scale(1.01);
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-                transition: all 200ms ease-in;
-            }
-
-            #services-card-clinic-accompany{
-                background-image:linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.75)), url('/assets/img/clinic-accompany/cover.jpg');
-                background-size: cover;
-
-                background-repeat: no-repeat;
-                transition: all 200ms ease-in;
-            }
-
-            
-            #services-card-clinic-accompany:hover{
-                transform: scale(1.01);
-                box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-
-                transition: all 200ms ease-in;
-            }
-        </style>
-        
         <div class="col-12 col-lg-6">
             <a class="text-decoration-none" href="services/shiatsu">
-                <div id="services-card-shiatsu" class="card border border-0 py-5 object-fit-cover">
-                    <div class="card-body text-white">
+                <div id="services-card-shiatsu" class="card border-0 my-1 object-fit-cover h-100">
+                    <div class="card-body text-white d-flex flex-column justify-content-center h-100 py-5">
                         <h5 class="card-title">{{site.data.text.shorts.shiatsu.title}}</h5>
                         <p class="card-text">{{site.data.text.shorts.shiatsu.txt}}</p>
                     </div>
@@ -104,8 +104,8 @@ title: "Home"
         </div>
         <div class="col-12 col-lg-6">
             <a class="text-decoration-none" href="services/life-coaching">
-                <div id="services-card-life-coaching" class="card border border-0 py-5 object-fit-cover">
-                    <div class="card-body text-white">
+                <div id="services-card-life-coaching" class="card border-0 my-1 object-fit-cover h-100">
+                    <div class="card-body text-white d-flex flex-column justify-content-center h-100 py-5">
                         <h5 class="card-title">{{site.data.text.shorts.life_coaching.title}}</h5>
                         <p class="card-text">{{site.data.text.shorts.life_coaching.txt}}</p>
                     </div>
@@ -115,8 +115,8 @@ title: "Home"
 
         <div class="col-12">
             <a class="text-decoration-none" href="services/clinic-accompany">
-                <div id="services-card-clinic-accompany" class="card border border-0 py-5 object-fit-cover">
-                    <div class="card-body text-white">
+                <div id="services-card-clinic-accompany" class="card border-0 my-1 object-fit-cover ">
+                    <div class="card-body text-white d-flex flex-column justify-content-center h-100 py-5">
                         <h5 class="card-title">{{site.data.text.shorts.clinic_accompany.title}}</h5>
                         <p class="card-text">{{site.data.text.shorts.clinic_accompany.txt}}</p>
                     </div>
@@ -132,6 +132,7 @@ title: "Home"
             </div>
         </div>
     </div>
+
 </div>
 
 <!-- contact -->
@@ -145,4 +146,3 @@ title: "Home"
         </div>
     </div>
 </div>
-
