@@ -1,7 +1,7 @@
 ---
 title: "サービス | {{page.title}}"
 layout: default
-img_path: "/assets/img/{{page.img_dir}}"
+img_path: "/assets/img"
 ---
 <!-- title -->
 <div class="container text-center d-grid gap-2 border-bottom border-4 pb-5">
@@ -26,7 +26,7 @@ img_path: "/assets/img/{{page.img_dir}}"
     </div>
     <div class="col-12 col-xl-6 my-xl-auto">
         <div class="ratio ratio-4x3">
-            <img class="object-fit-cover img-fluid" src="{{ img_path | relative_url }}/cover.jpg" alt="">
+            <img class="object-fit-cover img-fluid" src="{{ img_path | relative_url }}/{{img_dir}}/cover.jpg" alt="">
         </div>
     </div>
 </div>
