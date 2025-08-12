@@ -27,7 +27,7 @@ layout: default
     <div class="col-12 col-xl-6 my-xl-auto">
         <div class="ratio ratio-4x3">
             <img class="object-fit-cover img-fluid" 
-                src="{{ '/assets/img/' | append: (img_dir | default: '') | append: '/cover.jpg' | relative_url }}"
+                src="{{ '/assets/img/' | page.img_dir | append: '/cover.jpg' | relative_url }}"
                 alt="">
         </div>
     </div>
@@ -44,7 +44,7 @@ layout: default
                     <div class="col">
                         <div class="ratio ratio-1x1 ">
                             <img class="img-fluid object-fit-cover"
-                                src="{{ '/assets/img/' | append: (img_dir | default: '') | append: '/' | append: point.img | relative_url }}"
+                                src="{{ '/assets/img/' | page.img_dir | append: '/' | append: point.img | relative_url }}"
                                 alt="">
                         </div>
                     </div>
